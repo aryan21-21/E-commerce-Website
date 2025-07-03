@@ -1,0 +1,34 @@
+/* Remove green border/shadow from InnerImageZoom */
+.productView .inner-image-zoom,
+.productView .inner-image-zoom__img,
+.productView .inner-image-zoom__zoom-img {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Add spacing to badge if needed */
+.badge {
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* Optional: Customize button styles */
+.btn-blue {
+  background-color: #233a95 !important;
+  color: white !important;
+  font-weight: bold !important;
+  text-transform: capitalize !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.btn-big {
+  font-size: 16px !important;
+  padding: 12px 30px !important;
+}
+
+.btn-round {
+  border-radius: 999px !important;
+}

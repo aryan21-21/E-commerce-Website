@@ -1,0 +1,99 @@
+.about-hero {
+  background-image: url('https://klbtheme.com/bacola/wp-content/uploads/2021/08/about-header.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-overlay {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.about-overlay h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-overlay p {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.about-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.about-text-block {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.about-text-block h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.about-text-block p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.about-ceo-section {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.ceo-image img {
+  width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ceo-text {
+  flex: 1;
+}
+
+.ceo-name {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.ceo-text h3 {
+  font-size: 22px;
+  color: #233a95;
+  margin-bottom: 10px;
+}
+
+.ceo-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.about-extra-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
