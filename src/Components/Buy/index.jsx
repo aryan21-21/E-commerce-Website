@@ -60,7 +60,7 @@ function CheckoutPage() {
   };
 
   const subtotal = cart.reduce((sum, item) => sum + item.price * (item.quantity || 1), 0);
-  const shipping = 5.00;
+  const shipping = 2.50;
   const total = subtotal + shipping;
 
   if (orderPlaced) {
@@ -139,6 +139,7 @@ function CheckoutPage() {
                 <option value="US">United States (US)</option>
                 <option value="UK">United Kingdom</option>
                 <option value="CA">Canada</option>
+                <option value="India">India</option>
               </select>
             </div>
             

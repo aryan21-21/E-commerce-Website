@@ -8,8 +8,9 @@ import 'swiper/css/pagination';
 import React, { useContext, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-
+import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
+
 import Rating from '@mui/material/Rating';
 
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -20,7 +21,6 @@ import { CiMail } from "react-icons/ci";
 // Local components & context
 import HomeBanner from "../../Components/HomeBanner/HomeBanner";
 import HomeCat from "../../Components/HomeCat";
-import ProductModel from "../../Components/ProductModal";
 import { MyContext } from '../../App';
 
 // Assets
@@ -46,10 +46,6 @@ import NewProduct4 from './NewProducts/NewProduct4';
 function index() {
 
   const context = useContext(MyContext) 
-  const[isOpenProductModel,setisOpenProductModel]=useState(false);
-  const viewProduct=(id)=>{
-    context.setisOpenProductModel(true);
-  }
   return (
     <div>
       <HomeBanner />
@@ -90,6 +86,8 @@ function index() {
 
               {/* -- PRODUCT SLIDER -- */}
               <div className="product_row w-100 mt-4">
+
+
                 <Swiper
                   slidesPerView={4}
                   spaceBetween={0}
@@ -103,6 +101,9 @@ function index() {
                   modules={[Navigation, Autoplay]} // ✅ Add Autoplay here
                   className="mySwiper"
                 >
+
+
+
                   <SwiperSlide><Product1 /></SwiperSlide>
                   <SwiperSlide><Product2 /></SwiperSlide>
                   <SwiperSlide><Product3 /></SwiperSlide>
@@ -119,9 +120,12 @@ function index() {
                   <p className="text-muted text-sml mb-0">New products with updated stocks.</p>
                 </div>
                 <div className="ms-auto">
+                <Link to="/cat">
                   <Button className="viewAll">
                     View All <IoIosArrowRoundForward />
                   </Button>
+                </Link>
+                
                 </div>
               </div>
 

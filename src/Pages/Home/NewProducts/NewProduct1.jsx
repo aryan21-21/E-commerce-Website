@@ -47,6 +47,7 @@ function NewProduct1() {
           </div>
 
           {/* ✅ Wishlist Button */}
+
           <button
             className="btn btn-outline-danger btn-sm mt-2 w-100"
             onClick={() => addToCart(product)}
@@ -55,7 +56,10 @@ function NewProduct1() {
             <GoHeart size={16} className="me-1" />
             Add To Wishlist
           </button>
+        
+        
         </div>
+
       </div>
     </div>
   );

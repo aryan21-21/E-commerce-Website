@@ -140,17 +140,22 @@ function Header() {
                 <Link to="/">
                   <button type="button">
                     <IoSearch />
-                </button>
-              </Link>
-                </div>
+                  </button>
+                </Link>
+              </div>
 
               <div className="part3 d-flex align-items-center ml-auto ">
-                <button className="circle mr-3">
-                  <Link to="/Account"><FaRegCircleUser /></Link>
+
+
+                <button className="- mr-3">
+                  <Link to="/Login"><FaRegCircleUser /></Link>
                 </button>
+
+                
                 <div className="cartTab ml-20 d-flex align-items-center">
                   <span className="price">${ctx.cart.reduce((acc, item) => acc + item.price, 0).toFixed(2)}</span>
                   <div className="position-relative ml-2">
+
                     <button className="cart ml-2" onClick={() => navigate('/cart')}>
                       <IoBagOutline />
                       <span className="count d-flex align-items-center justify-content-center">
@@ -164,7 +169,6 @@ function Header() {
           </div>
         </div>
       </div>
-
       <nav>
         <div className="container">
           <div className="row">

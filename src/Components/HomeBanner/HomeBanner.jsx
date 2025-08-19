@@ -32,7 +32,6 @@ function HomeBanner() {
             className="w-100"
           />
         </div>
-        
       </Slider>
     </div>
   );

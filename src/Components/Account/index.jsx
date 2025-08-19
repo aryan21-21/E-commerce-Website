@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import '../Account/Account.css'; // ✅ Make sure this file exists and is styled
-
+import '../Account/Account.css'; 
 function RegisterForm() {
   const [formData, setFormData] = useState({
     username: '',
@@ -44,8 +43,9 @@ function RegisterForm() {
       <div className="tab-header">
         <span className="tab active">REGISTER</span>
       </div>
-
       <form className="register-form" onSubmit={handleSubmit}>
+
+
         <label>Username *</label>
         <input
           type="text"
@@ -76,10 +76,15 @@ function RegisterForm() {
         <p className="privacy-text">
           Your personal data will be used to support your experience throughout
           this website, to manage access to your account, and for other purposes
-          described in our <a href="https://www.privacypolicies.com/live/1f96d5ee-1e11-405b-a88a-f56e9bf05648">privacy policy</a>.
+          described in our <a href="https://www.privacypolicies.com/live/1f96d5ee-1e11-405b-a88a-f56e9bf05648">
+          privacy policy</a>.
         </p>
 
+
         <button type="submit" className="register-btn">Register</button>
+
+
+
       </form>
     </div>
   );

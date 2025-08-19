@@ -9,6 +9,7 @@ const HomeCat = ()=>{
         <>
         <section className='homeCat'>
             <div className="contanier">
+
                 <h3 className=' mb-3 hd mt-0'>Featured Products</h3>
                 <Swiper
                     slidesPerView={10}
@@ -23,6 +24,8 @@ const HomeCat = ()=>{
                     modules={[Autoplay, Pagination]} // ✅ Include Autoplay module
                     className="mySwiper"
                     >
+
+                
                     <SwiperSlide>
                         <div className='item text-center cursor '>
                             <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-53-346x310.jpg'></img>
@@ -41,6 +44,7 @@ const HomeCat = ()=>{
                             <h6>Coca Cola</h6>
                         </div>
                     </SwiperSlide>
+
                     <SwiperSlide>
                         <div className='item text-center'>
                             <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-42-346x310.jpg'></img>

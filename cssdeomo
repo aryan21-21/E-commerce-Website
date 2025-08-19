@@ -1,0 +1,1469 @@
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.p-15 {
+  padding: 10px; /* Reduce if needed */
+}
+.banner img {
+  border-radius: 10px;
+}
+.row.gx-0 {
+  --bs-gutter-x: 0; /* Bootstrap override */
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.text-light{
+  color: #a9a1a1 !important;
+
+}
+
+button{
+  text-transform: capitalize !important;
+}
+
+/* ==========================================================================
+  HEADER TOP STRIP
+  ========================================================================== */
+.bg-blue{
+  background-color: #233a95;
+}
+
+.headerWrapper .top-strip {
+  padding: 8px 0;
+}
+
+.headerWrapper .message {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+  HEADER MAIN SECTION
+  ========================================================================== */
+.headerWrapper .header {
+  width: 100%;
+  padding: 25px 0;
+}
+
+.logoWrapper img {
+  width: 100%;
+}
+
+.headerWrapper {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 1px;
+}
+
+/* ==========================================================================
+  COUNTRY DROPDOWN
+  ========================================================================== */
+.countryDrop {
+  width: 150px;
+  height: 60px;
+  min-width: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+}
+
+.countryDrop .info {
+  line-height: 16px;
+}
+
+.countryDrop .lable {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.countryDrop .name {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.countryDrop span.ms-auto svg {
+  opacity: 0.7;
+}
+
+/* ==========================================================================
+  LOCATION MODAL
+  ========================================================================== */
+.locationModel.MuiPaper-elevation {
+  padding: 25px;
+}
+
+.locationModel .countrylist {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 0;
+}
+
+.locationModel .countrylist li {
+  list-style: none;
+}
+
+.locationModel .countrylist button {
+  width: 100%;
+  text-transform: capitalize;
+  color: #000;
+  justify-content: flex-start;
+  padding: 15px 20px;
+}
+
+ .close_ {
+  position: absolute !important;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #000;
+}
+
+ .close_ svg {
+  font-size: 22px;
+}
+
+.locationModel .countrylist li button:hover {
+  background: #f1f1f1;
+}
+
+.locationModel .countrylist li button.active {
+  background: #ccc;
+}
+
+/* ==========================================================================
+  SEARCH BAR STYLES
+  ========================================================================== */
+.headerSearch {
+  width: 50%;
+  height: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f3f4f7;
+  position: relative;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.headerSearch input {
+  flex: 1;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  border: 0;
+  outline: none;
+  background-color: #fff;
+}
+
+.headerSearch input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.headerSearch button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.headerSearch button svg {
+  font-size: 25px;
+}
+
+/* ==========================================================================
+  USER & CART ICONS
+  ========================================================================== */
+.part3 .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  color: #0d6efd;
+  margin-left: 20px;
+}
+
+.part3 .circle svg {
+  font-size: 20px;
+}
+
+.part3.circle :hover{
+  background-color: #233a95;
+}
+
+.cartTab {
+  display: flex;
+  align-items: center;
+}
+
+.cartTab .price {
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.cart {
+  position: relative;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.cart svg {
+  font-size: 24px;
+}
+
+.count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ea2b0f;
+  color: #fff;
+}
+
+/* ==========================================================================
+  NAVIGATION BAR
+  ========================================================================== */
+nav {
+  padding: 12px 0;
+}
+
+.navPart1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* FIX 1: pin to left */
+  flex: 0 0 20%;
+  max-width: 20%;
+  position: relative;
+}
+
+.navPart1 .logoWrap {
+  position: relative;
+  z-index: 1;
+}
+
+.navPart1 .allCatTab {
+  margin-left: 0 !important; /* FIX 1 override */
+  padding: 8px 20px;
+  height: 50px;
+  background-color: #7a55c1;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+}
+
+.navPart1 .allCatTab:hover {
+  background-color: #22ade3;
+}
+
+.navPart1 .iocon1 svg,
+.navPart1 .iocon2 svg {
+  font-size: 18px;
+}
+
+/* Dropdown menu */
+.navPart1 .allCatTab .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 200px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  z-index: 999;
+}
+
+.navPart1 .allCatTab:hover .dropdown-menu {
+  display: block;
+}
+
+.navPart1 .dropdown-menu li {
+  list-style: none;
+}
+
+.navPart1 .dropdown-menu li a {
+  display: block;
+  padding: 10px 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.navPart1 .dropdown-menu li a:hover {
+  background-color: #f5f5f5;
+}
+
+.navPart1 .dropdown-menu ul li {
+    position: static;
+}
+.navPart1 .dropdown-menu ul li{
+  position: static;
+  padding-right:15px;
+
+} 
+
+/* ------------ generic button trigger ------------ */
+.navPart1 .allCatTab {
+  border: none;
+  background:#0d6efd;
+  width: 80%;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* -------- first-level dropdown (hidden by default) -------- */
+.navPart1 .dropdown-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;         /* under the trigger */
+  left: 0;
+  width: 50px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.1);
+  box-shadow: 0 8px 16px rgba(0,0,0,.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s ease-in-out;
+  z-index: 90;
+}
+
+/* reveal main menu on hover/focus */
+.navPart1:hover .dropdown-menu,
+.navPart1 .allCatTab:focus .dropdown-menu,
+.navPart1 .allCatTab:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* items inside first-level menu */
+.navPart1 .dropdown-menu li {
+  position: relative;   /* anchor for its own submenu */
+}
+
+.navPart1 .dropdown-menu li a,
+.navPart1 .dropdown-menu li button {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  text-align: auto;
+  font-size: 14px;
+  color: #333;
+}
+
+.navPart1 .dropdown-menu li a:hover,
+.navPart1 .dropdown-menu li button:hover {
+  background: #f5f5f5;
+
+}
+
+/* -------- second-level submenu (hidden by default) -------- */
+.navPart1 .dropdown-menu li .submenu {
+  position: absolute;
+  top: 0;
+  left: 250px;        /* flush to the right of parent li */
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  border-left: 1px solid rgba(0,0,0,.1);
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s ease-in-out;
+  z-index: 100;
+}
+
+/* reveal submenu when parent li is hovered */
+.navPart1 .dropdown-menu li:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* optional: flatten the MUI buttons inside submenu */
+.navPart1 .dropdown-menu li .submenu .MuiButton-root {
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: 0;
+  text-transform: none;
+  font-size: 14px;
+}
+
+
+
+/* ==========================================================================
+  NAV BAR LINKS (COLUMN 2)
+  ========================================================================== */
+.navPart2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* FIX 2: nav links align left */
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+
+.navPart2 .ml-auto {
+  margin-left: 0 !important; /* FIX 2: override bootstrap */
+}
+
+.navPart2 ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-left: 20px; /* optional spacing from categories button */
+}
+
+.navPart2 ul li a {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+  transition: background-color 0.2s ease-in-out;
+} 
+
+.navPart2 ul li a:hover {
+  background-color: #f0faff;
+  color: #2bbef9;
+}
+
+.navPart2 ul li a svg {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+/* ===========  SUBMENU BASE  =========== */
+.navPart2 .subMenu {                /* FIX selector: space, not '.' */
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;                /* you had #000; change if needed */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  min-width: 150px;
+  z-index: 1000;
+}
+
+/* show submenu on hover */
+.navPart2 .list-inline-item:hover .subMenu {
+  display: block;
+}
+
+/* links inside submenu */
+.navPart2 .subMenu a {              /* FIX selector: 'a', not 'Link' */
+  display: block;
+  padding: 6px 20px;
+  color: #000;
+  text-decoration: none;
+  white-space: nowrap;     
+  right: auto;        /* keeps text on one line */
+}
+
+.navPart2 .subMenu a:hover {
+  background-color: #f5f5f5;
+}
+
+/* make sure parent <li> can anchor the absolute submenu */
+.navPart2 .list-inline-item {
+  position: relative;              /* already in your CSS, keep it */
+}
+
+.navPart2 .list-inline-item:hover .subMenu {
+  display: block;
+}
+
+/* Nested submenu */
+.subMenu .nested-item {
+  position: relative;
+}
+
+.subSubMenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  min-width: 150px;
+  z-index: 1001;
+}
+
+.subMenu .nested-item:hover .subSubMenu {
+  display: block;
+}
+
+/* Links */
+.subMenu a, .subSubMenu a {
+  display: block;
+  padding: 6px 20px;
+  color: #000;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.subMenu a:hover, .subSubMenu a:hover {
+  background-color: #f5f5f5;
+}
+
+
+/* ==========================================================================
+  SCROLLBAR
+  ========================================================================== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.HomeBanner {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.HomeBanner * {
+  outline: none;
+}
+
+/* ─────────────── Slick arrows ─────────────── */
+.HomeBanner .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: #000;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.75;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* hide slick-default chevron (optional) */
+.HomeBanner .slick-arrow::before {
+  content: '';
+}
+
+/* custom caret using CSS arrow (optional) */
+.HomeBanner .slick-prev::after,
+.HomeBanner .slick-next::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  margin: auto;
+  position: absolute;
+  top: 0; 
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+}
+
+.HomeBanner .slick-prev::after {
+  transform: rotate(-135deg);
+}
+
+.HomeBanner .slick-next::after {
+  transform: rotate(45deg);
+}
+
+/* left / right positions */
+.HomeBanner .slick-prev { 
+  left: 10px;
+}
+.HomeBanner .slick-next { 
+  right: 10px;
+}
+
+/*------------------------Home Product Sectrion-----------------------*/
+
+.homeProducts {
+  padding: 0px 0px;
+  width: 100%;
+}
+
+
+.homeProducts{
+    padding: 25px 0px;
+    width: 100%;
+}
+
+.homeProducts.banner{
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.text-light{
+  color: #ccc;
+}
+
+ .text-sml{
+  font-size: 14px;   
+ } 
+
+ .hd{
+  font-size: 20 px;
+  font-weight: 600;
+  text-transform: uppercase;
+ }
+
+ .viewAll {
+  padding: 5px 25px !important;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 30px !important;
+  color: #000;
+  font-weight: 600;
+  text-transform: capitalize !important;
+  display: block !important;
+  margin-left: auto !important;
+ }
+
+.viewAll svg{
+font-size: 8px;
+}
+
+.productItem {
+  width: 100%;
+  min-height: 320px;         /* Ensures all cards are at least this tall */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+
+.productItem .badge{
+  display: inline-block;
+  padding: 7px 10px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 100;
+}
+
+.productItem .info h6{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.info .oldPrice {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: line-through;
+  cursor: pointer;
+}
+.info .netPrice {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.productItem .actions {
+  position: absolute;
+  top: 20px;
+  right: -100px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap:50px;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.productItem .actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.productItem .actions button svg {
+  color: #000;
+  opacity: 0.8;
+  font-size: 15px;
+  pointer-events: none;
+}
+
+.productItem .actions button:hover {
+  background: #7a55c1;
+}
+
+.productItem .actions button:hover svg {
+  color: white;
+}
+
+.productItem .imgWrapper img{
+  transition: all 0.3 ease-in-out ;
+}
+
+.productItem .imgWrapper:hover img{
+  transform: scale(1.1);
+}
+.productItem .imgWrapper {
+  overflow: hidden;
+}
+
+.productItem .imgWrapper:hover .actions {
+  opacity: 1;
+  right: 10px;
+}
+
+.homeCat {
+  padding: 35px 0px 10px 0px; /* reduced bottom padding */
+}
+
+.homeCat .item {
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  background: #feefea;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: none;
+  overflow: inherit;
+  transition: transform 0.2s ease-in-out;
+  background: transparent;
+}
+
+.homeCat .item:hover {
+  transform: scale(1.25);
+  transition: transform 0.3s ease-in-out;
+}
+
+.homeCat .item img {
+  width: 120%;
+  margin: 0 auto;
+}
+
+.homeCat .swiper {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* ================================
+   SWIPER LAYOUT FOR PRODUCT CARDS
+   ================================ */
+
+/* Ensure Swiper fills container */
+.mySwiper {
+  width: 100%;
+  padding: 30px 0;
+}
+
+/* Proper alignment of each slide */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* ensures same height if needed */
+  height: auto;
+}
+
+/* Product card styling inside slide */
+.swiper-slide .productItem {
+  width: 100%;
+  max-width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.swiper-slide .productItem:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Badge (e.g., discount %) positioning */
+.productItem .badge {
+  font-size: 12px;
+  font-weight: 600;
+  top: 10px;
+  left: 10px;
+}
+
+/* Product image wrapper */
+.productItem .imgWrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.productItem .imgWrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.productItem .imgWrapper:hover img {
+  transform: scale(1.05);
+}
+
+/* Discount badge styling */
+.productItem .imgWrapper .badge {
+  background-color: #233a95;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+/* Actions on hover */
+.productItem .actions {
+  position: absolute;
+  top: 15px;
+  right: -100px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.productItem:hover .actions {
+  right: 10px;
+  opacity: 1;
+}
+
+/* Inside Actions */
+.wishlist-btn {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.wishlist-btn:hover {
+  background-color: #f1f1f1;
+}
+.productItem .actions button {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 6px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productItem .actions button:hover {
+  background: #233a95;
+  color: white;
+}
+
+/* Title & Price */
+.productItem .info h6 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.productItem .info .text-success {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.productItem .info .oldPrice {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.productItem .info .netPrice {
+  font-size: 16px;
+  font-weight: 700;
+  color: #d90429;
+  margin-left: 8px;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1200px) {
+  .swiper-slide .productItem {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-slide .productItem {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper-slide .productItem {
+    max-width: 100%;
+  }
+}
+
+
+.productRow2 {
+  display: block;
+  flex-wrap: wrap;
+  gap: 10px; 
+}
+
+.productRow2 .productItem {
+  width: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.bannerSec{
+  gap: 15px;
+}
+
+.sticky{
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+}
+
+.newsLetter {
+  width: 100%;
+  height: auto;
+  padding: 100px 0px;
+  background: #233a95;
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden ;
+}
+ 
+.newsLetter p{
+  font-size: 18px;
+  margin: 10px 0px;
+}
+
+.newsLetter h3{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.newsLetter p.text-light{
+  color: #fff;
+  opacity: 5;
+  font-size: 15px;
+}
+
+.newsLetter.col-md-6{
+  position: static;
+}
+.newsLetter img{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.newsLetter form{
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  padding: 10px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.newsLetter form svg{
+  position: absolute;
+  top: 17px;
+  left: 10px;
+  font-size: 25px;
+  opacity: 0.3;
+}
+
+.newsLetter form input{
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  outline: none;
+  border: 0px;
+  padding-left: 30px;
+  padding-right: 200px;
+}
+
+.newsLetter form button {
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  background: #233a95;
+  font-size: 14px;
+  padding: 12px 30px ;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 600;
+ 
+}
+
+footer {
+  width: 100%;
+  background: #fff;
+  padding: 35px 0;
+  margin: auto;
+}
+footer .topInfo{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+footer .topInfo .col {
+  font-size: 10px;
+  padding: 15px 15px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 40px;
+}
+footer .topInfo .col :last-child{
+   border-right:0px ;
+}
+footer .topInfo .col svg {
+  font-size: 25px;
+  margin-right: 8px;
+}
+
+footer .topInfo .col span {
+  font-size: 15px;
+  font-weight: 600;
+}
+.linkwraps ul {
+  padding-left: 0;         /* Remove default padding */
+  margin-left: 0;          /* Optional: Reset margin */
+}
+
+.linkwraps ul li {
+  list-style: none;        /* Remove bullet */
+  margin-left: 0;          /* Align left */
+  text-align: left;        /* Ensure text aligns to left */
+}
+.linkwraps h5 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.linkwraps ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.linkwraps ul li a {
+  color: #000;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.linkwraps ul li a:hover {
+  text-decoration: underline;
+}
+.copy ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.copy ul li a :hover{
+  background : #7a55c1;
+}
+
+
+.copy ul li a svg{
+  font-size: 20px;
+  color: white;
+  color: rgba(0, 0, 0, 0.8) ;
+}
+
+.copy ul li a  :hover{
+  background: #7a55c1;
+}
+
+.productModal.MuiPaper-elevation{
+  max-width: 800px;
+  width: 800px;
+
+}
+.productModal h4{
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.productModal.MuiPaper-elevation {
+  max-width: 900px !important;
+  width: 900px !important;
+}
+
+.productModal h4 {
+  font-size: 22px !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.productZoom {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.productViewBig {
+  width: 100% !important;
+}
+
+.productView {
+  padding-top: 30px;
+}
+
+.productView .slick-slide {
+  padding-right: 20px !important;
+}
+
+.productView * {
+  outline: none !important;
+}
+
+.productView .item {
+  border: 2px solid transparent !important;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.productView .slick-current .item {
+  border: 2px solid #3bb77e !important;
+}
+
+.productView .slick-arrow {
+  top: 55% !important;
+  zoom: 80% !important;
+}
+
+.productView .slick-arrow.slick-next {
+  right: -2% !important;
+}
+
+.productView .slick-arrow.slick-prev {
+  left: -5% !important;
+}
+
+.btn-blue {
+  background: #7a55c1 !important;
+  color: rgb(255, 255, 255) !important;
+  font-weight: bold !important;
+  text-transform: capitalize !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.btn-big {
+  font-size: 16px !important;
+  padding: 10px 50px !important;
+}
+
+.btn-round {
+  border-radius: 50px !important;
+}
+.btn-sml{
+  font-size: 10px;
+  color: black;
+  text-transform: capitalize;
+}
+
+.btn-sml svg{
+  font-size: 20px;
+}
+.custom-btn {
+  background-color: #233a95 !important;
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  text-transform: none !important;
+  padding: 10px 15px !important;
+  border-radius: 999px !important;
+  min-width: auto !important;
+}
+
+.oldPrice {
+  font-size: 18px;
+  color: gray;
+}
+
+.netPrice {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.quantityDrop {
+  gap: 10px;
+}
+
+.qty-btn {
+  min-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #edeef5;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.qty-btn svg {
+  font-size: 14px;
+  color: black;
+}
+
+.quantityDrop input {
+  width: 30px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-weight: bold;
+  outline: none;
+}
+
+/* Modal Button Styles */
+.productModal.actions button {
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 10px;
+}
+
+.MuiFormControlLabel-label {
+  color: #000 !important;
+  display: inline-block !important;
+  writing-mode: horizontal-tb !important;
+  text-orientation: mixed !important;
+  transform: none !important;
+  letter-spacing: normal !important;
+  line-height: normal !important;
+  font-size: 14px !important;
+  white-space: nowrap !important;
+}
+
+
+.productModal.actions button svg {
+  font-size: 12px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+/* ========== PRODUCT LISTING LAYOUT ========== */
+.productListing {
+  padding: 35px 0px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+/* Sidebar */
+/* Layout container */
+.productListing {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Main content */
+.content_right {
+  width: 100%; /* Full width since sidebar is removed */
+}
+
+/* Optional cleanup: remove label override if not needed */
+.MuiFormControlLabel-label {
+  color: black;
+  font-size: 14px;
+  font-family: sans-serif;
+  white-space: nowrap;
+}
+
+/* Product Categories Scrollable Section */
+.sidebar .category-list {
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.sidebar .category-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar .category-list::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+/* Sidebar Filter Box Styling */
+.productListing .sidebar.filterbox {
+  margin-bottom: -15px;
+}
+
+.filterBox {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* Filter Section & Title */
+.filter-section {
+  padding: 20px 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1a1a1a;
+}
+
+.filter-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Price Range Slider */
+.custom-slider {
+  --range-slider-track-height: 4px;
+  --range-slider-thumb-size: 14px;
+  --range-slider-thumb-color: #111;
+  --range-slider-track-color: #ccc; /* lighter background for contrast */
+  --range-slider-active-track-color: #111;
+
+  width: 100%;       /* Ensure it stretches full width */
+  margin-bottom: 1rem; /* Add space below */
+}
+
+
+/* Price Info & Filter Button */
+
+.price-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.price-values {
+  white-space: nowrap;
+}
+
+.btn-filter {
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  color: #111;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.custom-slider .range-slider__range {
+  background-color: #233a95; /* Change this to your desired color */
+}
+
+/* Style the track background */
+.custom-slider .range-slider__track {
+  background-color: #e0e0e0; /* Optional: lighter background */
+}
+
+/* Style the thumbs (drag handles) */
+.custom-slider .range-slider__thumb {
+  background-color: #233a95;
+  border: 2px solid white;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.btn-success{
+  background: #233a95;
+}

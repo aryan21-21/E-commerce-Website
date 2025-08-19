@@ -19,17 +19,6 @@ function Product4() {
   return (
     <div>
       <div className="productItem border rounded position-relative p-3 text-start">
-
-        {/* Top-right fullscreen icon */}
-        <div className="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2">
-          <button
-            className="btn btn-light p-1 rounded-circle"
-            onClick={() => setisOpenProductModel(true)}
-          >
-            <AiOutlineFullscreen size={18} />
-          </button>
-        </div>
-
         {/* Product Image */}
         <div className="imgWrapper mb-3 position-relative">
           <img src={product.image} alt="Product" className="w-100 img-fluid" />
