@@ -147,7 +147,7 @@ function Header() {
               <div className="part3 d-flex align-items-center ml-auto ">
 
 
-                <button className="- mr-3">
+                <button className="circle mr-3">
                   <Link to="/Login"><FaRegCircleUser /></Link>
                 </button>
 
