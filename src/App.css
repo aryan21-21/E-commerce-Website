@@ -680,6 +680,7 @@ nav {
   border-radius: 30px !important;
   color: #000;
   font-weight: 600;
+  text-decoration: none;
   text-transform: capitalize !important;
   display: block !important;
   margin-left: auto !important;
