@@ -83,7 +83,10 @@ function RegisterForm() {
 
         <button type="submit" className="register-btn">Register</button>
 
-
+        <p className='mt-3'>
+          if you have an account?
+          <a href="/Login">Login</a>
+        </p>
 
       </form>
     </div>

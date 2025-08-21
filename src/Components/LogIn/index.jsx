@@ -24,7 +24,7 @@ function index() {
                 name='password' 
             />
             <button type="submit" className="register-btn" onClick={handleSubmit}>Login</button>
-            <p>
+            <p className='mt-3'>
                 Don't have an account?
                 <a href="/Account">Register</a>
             </p>
